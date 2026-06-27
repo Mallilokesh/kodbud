@@ -1,75 +1,255 @@
-SMS Spam Collection v.1
--------------------------
+Task 1: Build a Spam Email Classifier 
+# 📧 Spam Email Classifier using Machine Learning
 
-1. DESCRIPTION
---------------
+## 📌 Project Overview
 
-The SMS Spam Collection v.1 (hereafter the corpus) is a set of SMS tagged messages that have been collected for SMS Spam research. It contains one set of SMS messages in English of 5,574 messages, tagged acording being ham (legitimate) or spam. 
+This project builds a Spam Email Classifier using Machine Learning. It classifies email or SMS messages as **Spam** or **Ham (Not Spam)** using Natural Language Processing (NLP) and the Naive Bayes algorithm.
 
-1.1. Compilation
-----------------
+## 🚀 Features
 
-This corpus has been collected from free or free for research sources at the Web:
+* Data preprocessing
+* Text cleaning
+* TF-IDF Vectorization
+* Naive Bayes Classification
+* Spam/Ham Prediction
+* Interactive user input
 
-- A collection of between 425 SMS spam messages extracted manually from the Grumbletext Web site. This is a UK forum in which cell phone users make public claims about SMS spam messages, most of them without reporting the very spam message received. The identification of the text of spam messages in the claims is a very hard and time-consuming task, and it involved carefully scanning hundreds of web pages. The Grumbletext Web site is: http://www.grumbletext.co.uk/
-- A list of 450 SMS ham messages collected from Caroline Tag's PhD Theses available at http://etheses.bham.ac.uk/253/1/Tagg09PhD.pdf
-- A subset of 3,375 SMS ham messages of the NUS SMS Corpus (NSC), which is a corpus of about 10,000 legitimate messages collected for research at the Department of Computer Science at the National University of Singapore. The messages largely originate from Singaporeans and mostly from students attending the University. These messages were collected from volunteers who were made aware that their contributions were going to be made publicly available. The NUS SMS Corpus is avalaible at: http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/
-- The amount of 1,002 SMS ham messages and 322 spam messages extracted from the SMS Spam Corpus v.0.1 Big created by Jos� Mar�a G�mez Hidalgo and public available at: http://www.esp.uem.es/jmgomez/smsspamcorpus/
+## 🛠 Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+
+## 📂 Dataset
+
+Spam SMS Dataset containing:
+
+* Ham (Legitimate messages)
+* Spam (Unwanted messages)
+
+## 📊 Machine Learning Algorithm
+
+* TF-IDF Vectorizer
+* Multinomial Naive Bayes
+
+## 📈 Workflow
+
+1. Load dataset
+2. Clean text
+3. Convert text into TF-IDF vectors
+4. Split dataset into training and testing sets
+5. Train Naive Bayes classifier
+6. Evaluate model accuracy
+7. Predict new messages
+
+## 📦 Installation
+
+```bash
+pip install pandas numpy scikit-learn
+```
+
+## ▶️ Run
+
+```bash
+python spam_classifier.py
+```
+
+## 📌 Output
+
+* Spam or Ham prediction
+* Accuracy Score
+* Classification Report
+
+Task 6: AI-Based Rock, Paper, Scissors Game 
+# ✊✋✌ AI-Based Rock Paper Scissors Game
+
+## 📌 Project Overview
+
+An intelligent Rock Paper Scissors game where the user plays against the computer. The computer predicts the player's next move using previous game history and selects its move strategically.
+
+## 🚀 Features
+
+* User vs Computer gameplay
+* Score tracking
+* AI move prediction
+* Winner announcement
+* Continuous gameplay until exit
+
+## 🛠 Technologies Used
+
+* Python
+* Random Module
+* Basic AI Logic
+
+## 📊 Workflow
+
+1. User chooses Rock, Paper, or Scissors.
+2. Computer predicts the next move.
+3. Winner is determined.
+4. Scores are updated.
+5. Game continues until the user exits.
+
+## ▶️ Run
+
+```bash
+python rock_paper_scissors.py
+```
+
+## 📌 Concepts Used
+
+* Python Functions
+* Lists
+* Dictionaries
+* Conditional Statements
+* AI Prediction Logic
+
+Task 7: Stock Price Prediction 
+# 📈 Stock Price Prediction using Machine Learning
+
+## 📌 Project Overview
+
+This project predicts future stock prices using historical stock market data. It applies Linear Regression to analyze trends and forecast future prices.
+
+## 🚀 Features
+
+* Data preprocessing
+* Missing value handling
+* Data visualization
+* Linear Regression Model
+* Future stock price prediction
+* Model evaluation
+
+## 🛠 Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Scikit-learn
+
+## 📂 Dataset
+
+Apple Stock Price Dataset (CSV)
+
+Columns:
+
+* Date
+* Open
+* High
+* Low
+* Close
+* Volume
+
+## 📊 Machine Learning Algorithm
+
+* Linear Regression
+
+## 📈 Workflow
+
+1. Load dataset
+2. Data preprocessing
+3. Visualize stock trends
+4. Train Linear Regression model
+5. Predict future prices
+6. Evaluate model performance
+
+## 📦 Installation
+
+```bash
+pip install pandas numpy matplotlib scikit-learn
+```
+
+## ▶️ Run
+
+```bash
+python stock_price_prediction.py
+```
+
+## 📌 Output
+
+* Stock trend graphs
+* Predicted future prices
+* MAE
+* MSE
+* RMSE
+* R² Score
+
+Task 3: Sentiment Analysis on Tweets/Reviews 
+# 😊 Sentiment Analysis on Product Reviews using NLP
+
+## 📌 Project Overview
+
+This project performs Sentiment Analysis on product reviews using Natural Language Processing (NLP) and Machine Learning. It classifies customer reviews as **Positive** or **Negative**.
+
+## 🚀 Features
+
+* Text preprocessing
+* Stopword removal
+* Stemming
+* TF-IDF Vectorization
+* Logistic Regression Classification
+* Custom review prediction
+* Performance evaluation
+
+## 🛠 Technologies Used
+
+* Python
+* Pandas
+* NLTK
+* Scikit-learn
+
+## 📂 Dataset
+
+Women's Clothing E-Commerce Reviews Dataset
+
+Important Columns:
+
+* Review Text
+* Rating
+
+Sentiment Labels:
+
+* Rating 4–5 → Positive
+* Rating 1–2 → Negative
+
+## 📊 Machine Learning Algorithm
+
+* TF-IDF Vectorizer
+* Logistic Regression
+
+## 📈 Workflow
+
+1. Load dataset
+2. Clean review text
+3. Remove stopwords
+4. Apply stemming
+5. Convert text using TF-IDF
+6. Train Logistic Regression model
+7. Predict sentiments
+8. Evaluate model performance
+
+## 📦 Installation
+
+```bash
+pip install pandas nltk scikit-learn numpy
+```
+
+## ▶️ Run
+
+```bash
+python sentiment_analysis.py
+```
+
+## 📌 Output
+
+* Positive/Negative prediction
+* Accuracy
+* Classification Report
+* Confusion Matrix
+
+## 👨‍💻 Author
+
+Lokesh Malli
 
 
-1.2. Statistics
----------------
-
-There is one collection:
-
-- The SMS Spam Collection v.1 (text file: smsspamcollection) has a total of 4,827 SMS legitimate messages (86.6%) and a total of 747 (13.4%) spam messages.
-
-
-1.3. Format
------------
-
-The files contain one message per line. Each line is composed by two columns: one with label (ham or spam) and other with the raw text. Here are some examples:
-
-ham   What you doing?how are you?
-ham   Ok lar... Joking wif u oni...
-ham   dun say so early hor... U c already then say...
-ham   MY NO. IN LUTON 0125698789 RING ME IF UR AROUND! H*
-ham   Siva is in hostel aha:-.
-ham   Cos i was out shopping wif darren jus now n i called him 2 ask wat present he wan lor. Then he started guessing who i was wif n he finally guessed darren lor.
-spam   FreeMsg: Txt: CALL to No: 86888 & claim your reward of 3 hours talk time to use from your phone now! ubscribe6GBP/ mnth inc 3hrs 16 stop?txtStop
-spam   Sunshine Quiz! Win a super Sony DVD recorder if you canname the capital of Australia? Text MQUIZ to 82277. B
-spam   URGENT! Your Mobile No 07808726822 was awarded a L2,000 Bonus Caller Prize on 02/09/03! This is our 2nd attempt to contact YOU! Call 0871-872-9758 BOX95QU
-
-Note: messages are not chronologically sorted.
-
-
-2. USAGE
---------
-
-We offer a comprehensive study of this corpus in the following paper that is under review. This work presents a number of statistics, studies and baseline results for several machine learning methods.
-
-[1] Almeida, T.A., G�mez Hidalgo, J.M., Yamakami, A. Contributions to the study of SMS Spam Filtering: New Collection and Results. Proceedings of the 2011 ACM Symposium on Document Engineering (ACM DOCENG'11), Mountain View, CA, USA, 2011. (Under review)
-
-
-3. ABOUT
---------
-
-The corpus has been collected by Tiago Agostinho de Almeida (http://www.dt.fee.unicamp.br/~tiago) and Jos� Mar�a G�mez Hidalgo (http://www.esp.uem.es/jmgomez).
-
-We would like to thank Dr. Min-Yen Kan (http://www.comp.nus.edu.sg/~kanmy/) and his team for making the NUS SMS Corpus available. See: http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/. He is currently collecting a bigger SMS corpus at: http://wing.comp.nus.edu.sg:8080/SMSCorpus/
-
-4. LICENSE/DISCLAIMER
----------------------
-
-We would appreciate if:
-
-- In case you find this corpus useful, please make a reference to previous paper and the web page: http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/ in your papers, research, etc.
-- Send us a message to tiago@dt.fee.unicamp.br in case you make use of the corpus.
-
-The SMS Spam Collection v.1 is provided for free and with no limitations excepting:
-
-1. Tiago Agostinho de Almeida and Jos� Mar�a G�mez Hidalgo hold the copyrigth (c) for the SMS Spam Collection v.1.
-
-2. No Warranty/Use At Your Risk. THE CORPUS IS MADE AT NO CHARGE. ACCORDINGLY, THE CORPUS IS PROVIDED `AS IS,' WITHOUT WARRANTY OF ANY KIND, INCLUDING WITHOUT LIMITATION THE WARRANTIES THAT THEY ARE MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. YOU ARE SOLELY RESPONSIBLE FOR YOUR USE, DISTRIBUTION, MODIFICATION, REPRODUCTION AND PUBLICATION OF THE CORPUS AND ANY DERIVATIVE WORKS THEREOF BY YOU AND ANY OF YOUR SUBLICENSEES (COLLECTIVELY, `YOUR CORPUS USE'). THE ENTIRE RISK AS TO YOUR CORPUS USE IS BORNE BY YOU. YOU AGREE TO INDEMNIFY AND HOLD THE COPYRIGHT HOLDERS, AND THEIR AFFILIATES HARMLESS FROM ANY CLAIMS ARISING FROM OR RELATING TO YOUR CORPUS USE.
-
-3. Limitation of Liability. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR THEIR AFFILIATES, OR THE CORPUS CONTRIBUTING EDITORS, BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF ADVISED OF THE POSSIBILITY THEREOF, AND REGARDLESS OF WHETHER ANY CLAIM IS BASED UPON ANY CONTRACT, TORT OR OTHER LEGAL OR EQUITABLE THEORY, RELATING OR ARISING FROM THE CORPUS, YOUR CORPUS USE OR THIS LICENSE AGREEMENT.
